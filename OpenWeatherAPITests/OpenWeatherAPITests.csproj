@@ -1,7 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenWeatherAPI\OpenWeatherAPI.csproj" />
+    <ProjectReference Include="..\OWApi_QuickTest\OWApi_QuickTest.csproj" />
+    <ProjectReference Include="..\WeatherApp\WeatherApp.csproj" />
+  </ItemGroup>
 
 </Project>

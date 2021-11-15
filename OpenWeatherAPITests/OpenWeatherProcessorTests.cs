@@ -34,5 +34,11 @@ namespace OpenWeatherAPITests
             Assert.Throws<ArgumentException>(() => _mockOpenWeatherProcessor.Setup(s => s.GetCurrentWeatherAsync()));
         }
 
+        /*[Test]
+        public void GetOneCallAsync_IfApiHelperNotInitialized_ThrowArgumentException()
+        {
+            Assert.Throws<ArgumentException>(() => _mockOpenWeatherProcessor.Setup(s => s.GetCurrentWeatherAsync()));
+        }*/
+
     }
 }
